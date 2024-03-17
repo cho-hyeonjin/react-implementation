@@ -8,6 +8,10 @@ export function createDOM(node) {
   // 2-1. document.creatElement API를 이용하되 태그명에 해당하는 문자열을 HTML을 표현한 객체에서 notation으로 끌어온다.
   const element = document.createElement(node.tag);
 
+  Object.entries(node.props).forEach(([name, value]) =>
+    element.setAttribute(name, value)
+  );
+
   // 4-2. 재귀 패턴으로 createDOM 함수를 호출하여 element의 자식요소 붙이기
   node.children.map(createDOM).forEach(element.appendChild.bind(element)); // 컨텍스트가 깨지기 때문에 bind로 묶어서 고정해준 것!
 

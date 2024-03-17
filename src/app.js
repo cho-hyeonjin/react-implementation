@@ -17,17 +17,17 @@ const virtualDOM = {
       children: [
         {
           tag: "li",
-          props: {},
+          props: { style: "color: salmon" },
           children: ["아이템1"],
         },
         {
           tag: "li",
-          props: {},
+          props: { style: "color: skyblue" },
           children: ["아이템2"],
         },
         {
           tag: "li",
-          props: {},
+          props: { style: "color: tan" },
           children: ["아이템3"],
         },
       ],
