@@ -11,7 +11,6 @@ const virtualDOM = {
   tag: "p",
   props: {},
   children: [
-    // 자식 요소는 여러 개일 수 있으니까 배열로 만들되, 일단 1개의 태그(객체)만 만들어보자.
     {
       tag: "h1",
       props: {},
@@ -20,5 +19,5 @@ const virtualDOM = {
   ],
 };
 
-// createDOM 함수는 virtualDOM 겍체를 전달 받아서 DOM API로 element --- (개발자는 이렇게 만들어져 있는 함수를 이용하기만 하면 되는 것!)
-createDOM(virtualDOM);
+// 3. UI에 심어주자.
+document.querySelector("#root").appendChild(createDOM(virtualDOM));
