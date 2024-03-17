@@ -9,6 +9,11 @@ module.exports = {
     filename: "bundle.js",
   },
 
+  devServer: {
+    compress: true,
+    port: 9999,
+  },
+
   module: {
     rules: [
       {
