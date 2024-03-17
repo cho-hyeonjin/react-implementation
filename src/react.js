@@ -18,3 +18,9 @@ export function createDOM(node) {
   // 2-2. HTML element 리턴
   return element;
 }
+
+export function render(virtualDOM, container) {
+  // 3. UI에 심어주자.
+  //document.querySelector("#root").appendChild(createDOM(virtualDOM));
+  container.appendChild(createDOM(virtualDOM)); // 사용하는 쪽에서 react 내부 구조에 관심 두지 않도록
+}
