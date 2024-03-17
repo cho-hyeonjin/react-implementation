@@ -26,6 +26,27 @@ const virtualDOM = {
       props: {},
       children: ["React Implementation🧞‍♂️"],
     },
+    {
+      tag: "ul",
+      props: {},
+      children: [
+        {
+          tag: "li",
+          props: {},
+          children: ["아이템1"],
+        },
+        {
+          tag: "li",
+          props: {},
+          children: ["아이템2"],
+        },
+        {
+          tag: "li",
+          props: {},
+          children: ["아이템3"],
+        },
+      ],
+    },
   ],
 };
 
