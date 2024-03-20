@@ -2,7 +2,7 @@ import { createDOM, render } from "./react";
 import { createElement } from "./react";
 
 // createElement 함수로 만드는 VirtualDOM
-const virtualDOM2 = createElement(
+const virtualDOM = createElement(
   "p",
   {},
   createElement("h1", {}, "React Implementation"),
@@ -15,4 +15,4 @@ const virtualDOM2 = createElement(
   )
 );
 
-render(virtualDOM2, document.querySelector("#root"));
+render(virtualDOM, document.querySelector("#root"));
