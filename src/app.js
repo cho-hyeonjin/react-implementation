@@ -1,4 +1,5 @@
 import { createDOM, render } from "./react";
+import { createElement } from "./react";
 
 const virtualDOM = {
   tag: "p",
@@ -33,4 +34,9 @@ const virtualDOM = {
   ],
 };
 
+const virtualDOM2 = createElement(
+  "p",
+  {},
+  createElement("h1", {}, "React Implementation")
+);
 render(virtualDOM, document.querySelector("#root"));
