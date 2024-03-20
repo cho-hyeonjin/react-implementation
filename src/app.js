@@ -1,5 +1,5 @@
-import { createDOM, render } from "./react";
-import { createElement } from "./react";
+/* @jsx createElement */
+import { createDOM, createElement, render } from "./react";
 
 // createElement 함수로 만드는 VirtualDOM
 const virtualDOM = createElement(
