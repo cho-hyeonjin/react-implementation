@@ -14,8 +14,11 @@ export function createDOM(node) {
   return element;
 }
 
-// element 생성 함수 - children 자료형 반영 위해 가변 인자 사용 코드로 변경
+// element 생성 함수
 export function createElement(tag, props, ...children) {
+  // props에 null 들어오는 경우를 반영한 방어코드
+  props = props || {};
+
   return {
     tag,
     props,
