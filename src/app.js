@@ -1,5 +1,5 @@
 /* @jsx createElement */
-import { createDOM, render } from "./react";
+import { createDOM, createElement, render } from "./react";
 
 const virtualDOM = (
   <p>
